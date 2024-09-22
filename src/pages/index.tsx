@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import BubbleEffect from "@/components/BubbleEffect";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -46,12 +47,17 @@ export default function Home() {
             <a
               className="text-blue-500 mr-4"
               href="https://www.linkedin.com/in/hansyang1990/"
+              target="_blank"
             >
               LinkedIn
             </a>
-            <a className="text-red-500" href="/resume.pdf">
+            <Link
+              className="text-red-500"
+              href="/Resume-IT Lead-Songhua Yang.pdf"
+              target="_blank"
+            >
               Resume.pdf
-            </a>
+            </Link>
           </div>
         </div>
       </main>
